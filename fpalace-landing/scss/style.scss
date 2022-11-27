@@ -1,0 +1,196 @@
+@import "../scss/0style.scss";
+/*================GENERAL===================*/
+body {
+	display: flex;
+}
+.wrapper {
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 100%;
+}
+._container {
+	display: flex;
+	max-width: $maxWidthContainer;
+	min-width: $minWidth;
+	padding: 0px 12px 0px 12px;
+	margin: 0px auto;
+}
+
+/*================HEADER=====================*/
+.header{
+	padding: 0px 0px 75px 0px;
+}
+.header__content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 125px;
+	width: 100%;
+		.header__start {
+			display: grid;
+			height: 100%;
+			justify-items: start;
+			align-items: center;
+			grid-template-columns: 25px auto;
+			.logo-header__start {
+				display: grid;
+				width: 25px;
+				height: 25px;
+			}
+			.fp-header__start {
+				display: grid;
+				font-family: "Playfair Display";
+				font-size: 22px;
+				padding: 0px 0px 0px 6px;
+				color: $black;
+			}
+		}
+		.header__center {
+			display: grid;
+			height: 100%;
+			justify-items: center;
+			align-items: end;
+			.sandwich-header_content{
+				width: 152px;
+				height: 117px;
+				img{
+					padding: 16px 0px 0px 0px;
+				}
+			}
+		}
+		.header__end {
+			display: grid;
+			justify-items: end;
+			align-items: center;
+			.icons-header__end{
+				display: grid;
+				grid-template-columns: auto auto auto;
+				.search-header__end {
+					margin: 0px 66px 0px 0px;
+					button {
+							background-color: white;
+						}
+				}
+				.cart-header__end {
+					margin: 0px 66px 0px 0px;
+					button {
+							background-color: white;
+						}
+				}
+				.menu-header__end {
+					button{
+						background-color: white;
+					}
+				}
+			}
+		}
+}
+
+/*==================FOOD-MOOD==========================*/
+
+.food-mood{
+	padding: 0px 0px 130px 0px;
+	.food-mood__content{
+		display: grid;
+		grid-template-columns: 588.5px 588.5px ;
+		color: $black;
+		.food-mood__info{
+			.header__food-mood{
+				display: grid;
+				grid-template-columns: min-content  min-content;
+				color: $orange;
+				font-size: 24px;
+				font-family:'Gilroy Semibold';
+				padding: 0px 0px 40px 0px;
+				p{
+					height: 22px;
+					width: 27px;
+					border-bottom: 1px solid $orange;
+					margin: 0px 4px 0px 0px;
+				}
+			}
+			.title__food-mood{
+				.food-title{
+					display: flex;
+					flex-direction: row;
+					.start__food-title {
+						font-family: "Gilroy Extrabold";
+						font-size: 96px;
+					}
+					.center__food-title {
+						display: flex;
+						align-items: end;
+						padding: 0px 0px 8px 0px;
+					}
+					.end__food-title {
+						font-family: "Gilroy Extrabold";
+						font-size: 96px;
+					}
+				}
+				.mood-title{
+					display: flex;
+					flex-direction: row;
+					padding: 15px 0px 35px 0px;
+					.start__mood-title {
+						font-family: "Gilroy Extrabold";
+						font-size: 96px;
+					}
+					.center__mood-title {
+						display: grid;
+						grid-template-columns: 52px 52px;
+						gap: 4px;
+						align-items: end;
+						padding: 0px 4px 14px 10px;
+					}
+					.end__mood-title {
+						font-family: "Gilroy Extrabold";
+						font-size: 96px;
+					}
+				}
+			}
+			.subtitle__food-mood{
+				font-family: "Circular-Std-Book";
+				font-size: 20px;
+				color: $black;
+				max-width: 497px;
+				margin: 0px 0px 58px 0px;
+			}
+			.btn__food-mood{
+				margin: 0px 0px 70px 0px;
+			}
+			.icons__food-mood{
+				display: grid;
+				grid-template-columns: 35px 35px 35px;
+				gap: 30px;
+				.icons-food-mood {
+					box-shadow: 0 0 50px #ffcc84;
+					border-radius: 50%;
+					button{
+						height: 35px;
+						width: 35px;
+						background-color: white;
+						border-radius: 50%;
+					}
+				}
+			}
+			.food-mood__images {
+
+				.zero-fm{
+				}
+				.images-food-mood{
+					.circle-food-mood {
+					}
+					.bigfood-food-mood {}
+					.little-food1-food-mood {}
+					.little-food2-food-mood {}
+					.little-food3-food-mood {}
+				
+			}
+			
+		}
+
+
+	}
+}
+}

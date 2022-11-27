@@ -1,0 +1,295 @@
+/**==================RESET CSS===================*/
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700;);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/**======================USER CSS========================*/
+/*==============CONNECT FONTS=================*/
+@font-face {
+  font-family: "Circular-Std-Book";
+  font-weight: 450;
+  src: url(../fonts/FontsFree-Net-Circular-Std-Book-2.ttf);
+}
+@font-face {
+  font-family: "Circular-Std-Book-Medium-Italic";
+  font-weight: 500;
+  src: url(../fonts/FontsFree-Net-Circular-Std-Book-2.ttf);
+}
+@font-face {
+  font-family: "Gilroy Semibold";
+  font-weight: 600;
+  src: url(../fonts/gilroy-semibold.ttf);
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  font-weight: 700;
+  src: url(../fonts/gilroy-bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy Extrabold";
+  font-weight: 800;
+  src: url(../fonts/gilroy-black.ttf);
+}
+@font-face {
+  font-family: "Gilroy Bold Italic";
+  font-weight: 700;
+  src: url(../fonts/gilroy-bolditalic.ttf);
+}
+/*======================VARIABLES===================*/
+.general-btn {
+  font-family: "Circular-Std-Book";
+  font-size: 20px;
+  padding: 16px 33px;
+  background-color: #FF9401;
+  border-radius: 31px;
+  width: 243px;
+  box-shadow: 0 10px 50px #ffbc5d;
+}
+.general-btn:hover {
+  transition: background-color 0.3s ease 0.1s;
+  background-color: #ffa01c;
+}
+
+/*================GENERAL===================*/
+body {
+  display: flex;
+}
+
+.wrapper {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+}
+
+._container {
+  display: flex;
+  max-width: 1201px;
+  min-width: 250px;
+  padding: 0px 12px 0px 12px;
+  margin: 0px auto;
+}
+
+/*================HEADER=====================*/
+.header {
+  padding: 0px 0px 75px 0px;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 125px;
+  width: 100%;
+}
+.header__content .header__start {
+  display: grid;
+  height: 100%;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: 25px auto;
+}
+.header__content .header__start .logo-header__start {
+  display: grid;
+  width: 25px;
+  height: 25px;
+}
+.header__content .header__start .fp-header__start {
+  display: grid;
+  font-family: "Playfair Display";
+  font-size: 22px;
+  padding: 0px 0px 0px 6px;
+  color: #232323;
+}
+.header__content .header__center {
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  align-items: end;
+}
+.header__content .header__center .sandwich-header_content {
+  width: 152px;
+  height: 117px;
+}
+.header__content .header__center .sandwich-header_content img {
+  padding: 16px 0px 0px 0px;
+}
+.header__content .header__end {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+.header__content .header__end .icons-header__end {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.header__content .header__end .icons-header__end .search-header__end {
+  margin: 0px 66px 0px 0px;
+}
+.header__content .header__end .icons-header__end .search-header__end button {
+  background-color: white;
+}
+.header__content .header__end .icons-header__end .cart-header__end {
+  margin: 0px 66px 0px 0px;
+}
+.header__content .header__end .icons-header__end .cart-header__end button {
+  background-color: white;
+}
+.header__content .header__end .icons-header__end .menu-header__end button {
+  background-color: white;
+}
+
+/*==================FOOD-MOOD==========================*/
+.food-mood {
+  padding: 0px 0px 130px 0px;
+}
+.food-mood .food-mood__content {
+  display: grid;
+  grid-template-columns: 588.5px 588.5px;
+  color: #232323;
+}
+.food-mood .food-mood__content .food-mood__info .header__food-mood {
+  display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content;
+  color: #FF9401;
+  font-size: 24px;
+  font-family: "Gilroy Semibold";
+  padding: 0px 0px 40px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .header__food-mood p {
+  height: 22px;
+  width: 27px;
+  border-bottom: 1px solid #FF9401;
+  margin: 0px 4px 0px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .food-title {
+  display: flex;
+  flex-direction: row;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .food-title .start__food-title {
+  font-family: "Gilroy Extrabold";
+  font-size: 96px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .food-title .center__food-title {
+  display: flex;
+  align-items: end;
+  padding: 0px 0px 8px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .food-title .end__food-title {
+  font-family: "Gilroy Extrabold";
+  font-size: 96px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .mood-title {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px 35px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .mood-title .start__mood-title {
+  font-family: "Gilroy Extrabold";
+  font-size: 96px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .mood-title .center__mood-title {
+  display: grid;
+  grid-template-columns: 52px 52px;
+  gap: 4px;
+  align-items: end;
+  padding: 0px 4px 14px 10px;
+}
+.food-mood .food-mood__content .food-mood__info .title__food-mood .mood-title .end__mood-title {
+  font-family: "Gilroy Extrabold";
+  font-size: 96px;
+}
+.food-mood .food-mood__content .food-mood__info .subtitle__food-mood {
+  font-family: "Circular-Std-Book";
+  font-size: 20px;
+  color: #232323;
+  max-width: 497px;
+  margin: 0px 0px 58px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .btn__food-mood {
+  margin: 0px 0px 70px 0px;
+}
+.food-mood .food-mood__content .food-mood__info .icons__food-mood {
+  display: grid;
+  grid-template-columns: 35px 35px 35px;
+  gap: 30px;
+}
+.food-mood .food-mood__content .food-mood__info .icons__food-mood .icons-food-mood {
+  box-shadow: 0 0 50px #ffcc84;
+  border-radius: 50%;
+}
+.food-mood .food-mood__content .food-mood__info .icons__food-mood .icons-food-mood button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+}
