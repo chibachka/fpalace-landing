@@ -293,3 +293,11 @@ body {
   background-color: white;
   border-radius: 50%;
 }
+.food-mood .food-mood__content .food-mood__images {
+  display: flex;
+  justify-content: end;
+}
+.food-mood .food-mood__content .food-mood__images .bigfood-food-mood {
+  width: 442px;
+  height: 435px;
+}

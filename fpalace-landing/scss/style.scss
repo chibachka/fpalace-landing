@@ -174,18 +174,18 @@ body {
 					}
 				}
 			}
-			.food-mood__images {
-				.circle-food-mood {
-					}
-				.bigfood-food-mood {}
-				.little-food1-food-mood {}
-				.little-food2-food-mood {}
-				.little-food3-food-mood {}
-				
-			}
-
-
-
-	}
+		}
+		.food-mood__images {
+				display: flex;
+				justify-content: end;
+			.circle-food-mood {}
+			.bigfood-food-mood {
+				width: 442px;
+				height: 435px;
+				}
+					.little-food1-food-mood {}		
+					.little-food2-food-mood {}	
+					.little-food3-food-mood {}		
+				}
 }
 }
