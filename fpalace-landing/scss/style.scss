@@ -90,7 +90,7 @@ body {
 /*==================FOOD-MOOD==========================*/
 
 .food-mood{
-	padding: 0px 0px 130px 0px;
+	padding: 0px 0px 87px 0px;
 	.food-mood__content{
 		display: grid;
 		grid-template-columns: 588.5px 588.5px ;
@@ -178,14 +178,73 @@ body {
 		.food-mood__images {
 				display: flex;
 				justify-content: end;
-			.circle-food-mood {}
+				
 			.bigfood-food-mood {
-				width: 442px;
-				height: 435px;
+				height: 606px;
 				}
-					.little-food1-food-mood {}		
-					.little-food2-food-mood {}	
-					.little-food3-food-mood {}		
-				}
+			}
+		}
 }
+
+/*========================ABOUT-US=======================*/
+.about-us {
+	box-shadow: 0px 300px 200px inset rgba(255, 148, 1, 0.07);
+	padding: 0px 0px 0px 0px;
+	display: grid;
+	grid-template-rows: 677px;
+	.about-us__container{
+		display: grid;
+		
+		grid-template-columns: repeat(2, 50%);
+		.about-us__img {
+			height: 677px;
+			.about-us__img-container {
+				padding: 107px 72px 0px 0px;
+				.img__dish{
+					padding: 0px 0px 0px 40px;
+				}
+				.img__sauce{
+					position: relative;
+					left: -33px;
+					top: -503px+75px;
+				}
+				.triangle__about-us{
+					position: relative;
+					right: -265px;
+					bottom: 145px;
+				}
+			}
+		}
+		.about-us__info {
+			height: 677px;
+			padding: 142px 0px 0px 115px;
+			.about-us__about-us {
+				color: $orange;
+				font-size: 24px;
+				font-family: 'Gilroy Semibold';
+				padding: 0px 0px 20px 0px;
+			}
+		
+			.about-us__title {
+				font-family: "Gilroy Bold";
+				font-size: 52px;
+			}
+		
+			.about-us__subtitle {
+				font-family: "Circular-Std-Book";
+				font-size: 20px;
+				color: $black;
+				max-width: 497px;
+				margin: 22px 0px 35px 0px;
+			}
+		
+			.about-us__botton {}
+		
+			.general-btn {}
+		}
+	}
+}
+
+.features{
+
 }
