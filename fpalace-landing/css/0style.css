@@ -117,3 +117,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 0.3s ease 0.1s;
   background-color: #ffa01c;
 }
+
+.title {
+  color: #FF9401;
+  font-size: 24px;
+  font-family: "Gilroy Semibold";
+}
+
+.subtitle {
+  font-family: "Gilroy Bold";
+}

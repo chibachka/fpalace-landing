@@ -246,5 +246,60 @@ body {
 }
 
 .features{
+	.features-left {
+		padding: 74px 0px 0px 0px;
+		float: left;
+	}
+	.features-right{
+		float: right;
+	}
+	.features__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 115px 0px 0px 0px;
+		.features__subtitle {
+			font-size: 48px;
+			padding: 13px 0px 57px 0px;
+		}
+		.features-items {
+			display: grid;
+			grid-template-columns: repeat(3, 245px);
+			gap: 118px;
+			img{
+				height: 115px;
+				width: 91px;
+			}
+			.feat-item-1 {
+				display: flex;
+				width: 245px;
+				flex-direction: column;
+				align-items: center;
+			}
+				
+			.items-title {
+				font-family: "Gilroy Bold";
+				font-size: 24px;
+			}
+			.items-subtitle {
+				font-family: "Circular-Std-Book";
+				font-size: 18px;
+				padding: 31px 0px 19px 0px;
+				text-align: center;
+			}
+			.feat-item-2 {
+				display: flex;
+				width: 245px;
+				flex-direction: column;
+				align-items: center;
+			}
 
+			.feat-item-3 {
+				display: flex;
+				width: 245px;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}	
 }
